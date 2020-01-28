@@ -1,0 +1,33 @@
+Traceback (most recent call last):
+  File "antennalLobe.py", line 2, in <module>
+    import tensorflow.compat.v1 as tf
+ModuleNotFoundError: No module named 'tensorflow'
+Traceback (most recent call last):
+  File "antennalLobe.py", line 2, in <module>
+    import tensorflow.compat.v1 as tf
+ModuleNotFoundError: No module named 'tensorflow'
+Traceback (most recent call last):
+  File "antennalLobe.py", line 2, in <module>
+    import tensorflow.compat.v1 as tf
+ModuleNotFoundError: No module named 'tensorflow'
+Traceback (most recent call last):
+  File "antennalLobe.py", line 2, in <module>
+    import tensorflow.compat.v1 as tf
+ModuleNotFoundError: No module named 'tensorflow'
+Traceback (most recent call last):
+  File "antennalLobe.py", line 2, in <module>
+    import tensorflow.compat.v1 as tf
+ModuleNotFoundError: No module named 'tensorflow'
+Traceback (most recent call last):
+  File "antennalLobe.py", line 2, in <module>
+    import tensorflow.compat.v1 as tf
+ModuleNotFoundError: No module named 'tensorflow'
+Traceback (most recent call last):
+  File "analyse.py", line 59, in <module>
+    Y = np.fft.fft(y)
+  File "/home/apps/anaconda3/lib/python3.7/site-packages/mkl_fft/_numpy_fft.py", line 160, in fft
+    output = mkl_fft.fft(x, n, axis)
+  File "mkl_fft/_pydfti.pyx", line 122, in mkl_fft._pydfti.fft
+  File "mkl_fft/_pydfti.pyx", line 272, in mkl_fft._pydfti._fft1d_impl
+  File "mkl_fft/_pydfti.pyx", line 224, in mkl_fft._pydfti.__process_arguments
+ValueError: Dimension n should be a positive integer not larger than the shape of the array along the chosen axis
