@@ -1,15 +1,12 @@
 #!/bin/sh
 
-#SBATCH -N 1
-#SBATCH --ntasks-per-node=48
-#SBATCH --time=05:00:00
-#SBATCH --job-name=tensorflow
-#SBATCH --error=job.%J.err
-#SBATCH --output=job.%J.out
-#SBATCH --partition=standard
-
-cd $SLURM_SUBMIT_DIR
-
-module load python/3.7
-python initExperiment.py '/home/collins/Param_test/Od/OdorA_High.odor' '/home/collins/Param_test/Op/Dur_6000_OdorDur_1000.protocol' '/home/collins/Param_test/Lc/Locust_A.locust' '1' S(date +”%b%d%Y_%H%M”)
-
+sbatch scripts/a1.sh
+#sbatch scripts/a2.sh
+#sbatch scripts/a3.sh
+#sbatch scripts/a4.sh
+#sbatch scripts/a5.sh
+sbatch scripts/b1.sh
+#sbatch scripts/b2.sh
+#sbatch scripts/b3.sh
+#sbatch scripts/b4.sh
+#sbatch scripts/b5.sh
