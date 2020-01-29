@@ -93,34 +93,7 @@ for i in range(locust['ORN_types']): # Generate ORN types
 
 orns = np.array(orns*locust['ORN_replicates'])
 
-print("Generation Complete. Plotting.")
-
-# Plot the ORN Response
-plt.figure()
-order = np.argsort(orns.max(axis=1))
-plt.imshow(orns[order[::-1],::100], aspect='auto')
-plt.colorbar()
-plt.xlabel('Time (in ms)')
-plt.ylabel('Neuron Number')
-plt.title('ORN Response')
-plt.savefig('ORN Response.png')
-
-# Plot the ORN Traces
-plt.figure()
-order = np.argsort(orns.mean(axis=1))
-plt.plot(orns[:,::100].T)
-plt.xlabel('Time (in ms)')
-plt.ylabel('Neuron Number')
-plt.title('ORN Traces')
-plt.savefig('ORN Traces.png')
-
-# Plot EAD
-plt.figure()
-plt.plot(orns.mean(axis=0))
-plt.xlabel('Time (in ms)')
-plt.ylabel('Mean Firing Rate')
-plt.title('EAG Response')
-plt.savefig('EAG Response.png')
+print("Generation Complete.")
 
 # Save ORN Data
 np.save('ORN Firing Data',orns[:,::100])
@@ -158,14 +131,6 @@ for i in range(ORN_Output_s.shape[0]):
     print('{}/{} Acetylcholine Concentration Integration Completed'.format(i+1,locust['AL_n']), end = '\r')
 print()
 
-plt.figure(figsize=(12,3))
-order = np.concatenate((np.argsort(ORN_Output_current[:p_n,:].mean(axis=1))[::-1],p_n+np.argsort(ORN_Output_current[p_n:,:].mean(axis=1))[::-1]))
-plt.imshow(ORN_Output_current[order,::100], aspect='auto')
-plt.colorbar()
-plt.xlabel('Time (in ms)')
-plt.ylabel('Neuron Number')
-plt.savefig('Acetylcholine Concentration.png')
-
 ep=0.01
 a = 10.0
 b = 0.2
@@ -187,29 +152,6 @@ for i in range(1,time.shape[0]):
 print()
 
 print("Generation Complete")
-
-# Plot PN Current 
-plt.figure()
-plt.plot(X[:p_n,::100].T)
-plt.xlabel('Time (in ms)')
-plt.ylabel('PN Current Input')
-plt.savefig('PN Current.png')
-
-# Plot LN Current 
-plt.figure()
-plt.plot(X[p_n:,::100].T)
-plt.xlabel('Time (in ms)')
-plt.ylabel('LN Current Input')
-plt.savefig('LN Current.png')
-
-# Plot Overall Current
-plt.figure()
-order = np.concatenate((np.argsort(X[:p_n,:].mean(axis=1))[::-1],p_n+np.argsort(X[p_n:,:].mean(axis=1))[::-1]))
-plt.imshow(X[order,::100], aspect='auto')
-plt.colorbar()
-plt.xlabel('Time (in ms)')
-plt.ylabel('Neuron Number')
-plt.savefig('AL Input Current.png')
 
 # Save Current Input
 np.save('current_input',X)

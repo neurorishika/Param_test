@@ -12,6 +12,8 @@ odor_path = sys.argv[1]# easygui.fileopenbox(msg='Open Odor File',title='Odor Br
 protocol_path = sys.argv[2]# easygui.fileopenbox(msg='Open Protocol File',title='Odor Protocol Browser',default='/home/iiser/Collins-Saptarshi 2019b/DAMN/A. Odor Protocols/*.protocol',filetypes=['*.protocol'])
 locust_path = sys.argv[3]# easygui.fileopenbox(msg='Open Locust File',title='Locust Browser',default='/home/iiser/Collins-Saptarshi 2019b/DAMN/A. Locusts/*.locust',filetypes=['*.locust'])
 
+print(sys.argv[5])
+
 # Get Experiment Date metadata
 dt = datetime.datetime.now()
 
