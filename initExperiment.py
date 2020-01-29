@@ -42,7 +42,7 @@ np.save("time",time)
 print("Welcome to the AL !!!")
 
 for i in range(data['n_split']):
-    call(['python','antennalLobe.py',str(i), locust_path,protocol_path])
+    call(['python','antennalLobe.py',str(i), locust_path, protocol_path, sys.argv[5]])
 
 os.remove('state_vector.npy')
 os.remove('time.npy')
@@ -51,13 +51,10 @@ print("Simulation Completed. Time taken: {:0.2f}".format(t.time()-start))
 
 print("'Thank you for using our services.'-AL")
 
-# Start AL Analysis
-call(['python','analyse.py'])
-
 filename = odor_path.split('/')[-1].split('.')[0]+"_"+protocol_path.split('/')[-1].split('.')[0]+"_"+locust_path.split('/')[-1].split('.')[0]+"_"+sys.argv[4]
 
 # Generate Experiment Directory 
-folder = "/home/collins/Param_test/Simulation_Data/"+filename
+folder = "/home/collins/Simulation_Data/E_I_"+sys.argv[5]+"/"+filename
 if not os.path.exists(folder):
     os.makedirs(folder)
 
@@ -70,3 +67,5 @@ copy(odor_path,folder)
 copy(protocol_path,folder)
 copy(locust_path,folder)
 copy(os.getcwd()+"/antennalLobe.py",folder)
+
+print("Program Complete.")
