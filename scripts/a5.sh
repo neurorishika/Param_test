@@ -11,5 +11,5 @@
 cd $SLURM_SUBMIT_DIR
 
 module load python/3.7
-python ../initExperiment.py '/home/collins/Param_test/Od/OdorA_High.odor' '/home/collins/Param_test/Op/Dur_6000_OdorDur_1000.protocol' '/home/collins/Param_test/Lc/Locust_A.locust' '5' $(date +%F_%H-%M)
+python /home/collins/Param_test/initExperiment.py '/home/collins/Param_test/Od/OdorA_High.odor' '/home/collins/Param_test/Op/Dur_6000_OdorDur_1000.protocol' '/home/collins/Param_test/Lc/Locust_A.locust' '5' $(date +%F_%H-%M)
 
