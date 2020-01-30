@@ -1,4 +1,3 @@
-import numpy as np
 import matplotlib.pyplot as plt
 import polarTools as pt
 import pickle
@@ -96,7 +95,7 @@ orns = np.array(orns*locust['ORN_replicates'])
 print("Generation Complete.")
 
 # Save ORN Data
-np.save('ORN Firing Data',orns[:,::100])
+np.save(sys.argv[4]+'ORN Firing Data',orns[:,::100])
 
 init_theta = np.random.uniform(size=orns.shape[0])
 random_normal = np.random.normal(size=orns.shape)
@@ -154,6 +153,6 @@ print()
 print("Generation Complete")
 
 # Save Current Input
-np.save('current_input',X)
+np.save(sys.argv[4]+'/current_input',X)
 
 print("'Information has been transferred to the Antennal Lobe. Thank you for using our services.' - ORNs")

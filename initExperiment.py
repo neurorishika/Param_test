@@ -12,7 +12,6 @@ odor_path = sys.argv[1]# easygui.fileopenbox(msg='Open Odor File',title='Odor Br
 protocol_path = sys.argv[2]# easygui.fileopenbox(msg='Open Protocol File',title='Odor Protocol Browser',default='/home/iiser/Collins-Saptarshi 2019b/DAMN/A. Odor Protocols/*.protocol',filetypes=['*.protocol'])
 locust_path = sys.argv[3]# easygui.fileopenbox(msg='Open Locust File',title='Locust Browser',default='/home/iiser/Collins-Saptarshi 2019b/DAMN/A. Locusts/*.locust',filetypes=['*.locust'])
 
-print(sys.argv[5])
 
 # Get Experiment Date metadata
 dt = datetime.datetime.now()
@@ -22,11 +21,17 @@ meta_file = np.array([odor_path,protocol_path,locust_path])
 
 print("Metadata Acquired. Starting Simulation.")
 
+filename = odor_path.split('/')[-1].split('.')[0]+"_"+protocol_path.split('/')[-1].split('.')[0]+"_"+locust_path.split('/')[-1].split('.')[0]+"_"+sys.argv[4]
+# Generate Experiment Directory 
+folder = "/home/collins/Simulation_Data/"+sys.argv[5]+"/"+filename
+if not os.path.exists(folder):
+    os.makedirs(folder)
+
 # Start Timer
 start = t.time()
 
 # Start Receptor Layer Processing
-call(['python', 'receptorLayer.py', odor_path, protocol_path, locust_path])
+call(['python', '/home/collins/Param_test/receptorLayer.py', odor_path, protocol_path, locust_path, folder])
 
 # Load Protocol data
 with open(protocol_path, 'rb') as fp:
@@ -37,28 +42,21 @@ time = np.split(np.arange(0,data['duration'],data['resolution']),data['n_split']
 for n,i in enumerate(time):
     if n>0:
         time[n] = np.append(i[0]-0.01,i)
-np.save("time",time)
+np.save(folder+'/time',time)
 
 # Start Antennal Lobe Processing
 
 print("Welcome to the AL !!!")
 
 for i in range(data['n_split']):
-    call(['python','antennalLobe.py',str(i), locust_path, protocol_path, sys.argv[5]])
+    call(['python','/home/collins/Param_test/antennalLobe.py',str(i), locust_path, protocol_path, sys.argv[5], folder])
 
-os.remove('state_vector.npy')
-os.remove('time.npy')
+os.remove(folder+'/state_vector.npy')
+os.remove(folder+'/time.npy')
 
 print("Simulation Completed. Time taken: {:0.2f}".format(t.time()-start))
 
 print("'Thank you for using our services.'-AL")
-
-filename = odor_path.split('/')[-1].split('.')[0]+"_"+protocol_path.split('/')[-1].split('.')[0]+"_"+locust_path.split('/')[-1].split('.')[0]+"_"+sys.argv[4]
-
-# Generate Experiment Directory 
-folder = "/home/collins/Simulation_Data/"+sys.argv[5]+"/"+filename
-if not os.path.exists(folder):
-    os.makedirs(folder)
 
 # Move Data to Experiment Directory
 for f in filter(lambda v: (".pkl" in v) or (".npy" in v) or (".png" in v),os.listdir()):

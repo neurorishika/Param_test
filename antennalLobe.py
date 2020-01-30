@@ -24,7 +24,7 @@ n_n = locust['AL_n']             # number of neurons
 p_n = int(0.75*n_n)                  # number of PNs
 l_n = int(0.25*n_n)                  # number of LNs
 
-t = np.load("time.npy",allow_pickle=True)[int(sys.argv[1])]        # duration of simulation
+t = np.load(sys.argv[5]+"/time.npy",allow_pickle=True)[int(sys.argv[1])]        # duration of simulation
 
 C_m  = [1.0]*n_n                     # Capacitance
 
@@ -364,7 +364,7 @@ def dXdt(X, t): # X is the state vector
     return out
 
 
-current_input = np.load("current_input.npy")
+current_input = np.load(sys.argv[5]+"/current_input.npy")
 
 ## Scale ORN Output to AL Input
 PN_scale = 27/current_input[:p_n,:].max()/60 # PN Scaling Factor
@@ -377,9 +377,9 @@ if sys.argv[1] == '0':
     state_vector =  [-65]* p_n+[-50]* l_n + [0.5]* (n_n + 4*p_n + 3*l_n) + [2.4*(10**(-4))]*l_n + [0]*(n_syn_ach+n_syn_fgaba+2*n_syn_sgaba) + [-(sim_time+1)]*n_n
     state_vector = np.array(state_vector)
     state_vector = state_vector + 0.01*state_vector*np.random.normal(size=state_vector.shape)
-    np.save("state_vector",state_vector)
+    np.save(sys.argv[5]+"/state_vector",state_vector)
 else:
-    state_vector = np.load("state_vector.npy")
+    state_vector = np.load(sys.argv[5]+"/state_vector.npy")
 
 print("Number of Neurons:",n_n)
 print("Number of Synapses:",(n_syn_ach+n_syn_fgaba+n_syn_sgaba))
@@ -412,13 +412,13 @@ for n,i in enumerate(t_batch):
     print("Finished in",np.round(t1-t0,2),"secs...Saving...",end="")
     
     state_vector = state[-1,:]
-    np.save("batch"+str(int(sys.argv[1])+1)+"_part_"+str(n+1),state[:,:120])
+    np.save(sys.argv[5]+"/batch"+str(int(sys.argv[1])+1)+"_part_"+str(n+1),state[:,:120])
 
     state=None
     t2 = time.time()
     print("Saved ( Execution Time:",np.round(t2-t0,3),"secs )")
 
-np.save("state_vector",state_vector)
+np.save(sys.argv[5]+"/state_vector",state_vector)
 
 print("Completed",int(sys.argv[1])+1,"Segment(s). Total Execution Time:",np.round(time.time()-t_,3),"secs")
 
