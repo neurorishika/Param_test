@@ -56,7 +56,7 @@ print("'Thank you for using our services.'-AL")
 filename = odor_path.split('/')[-1].split('.')[0]+"_"+protocol_path.split('/')[-1].split('.')[0]+"_"+locust_path.split('/')[-1].split('.')[0]+"_"+sys.argv[4]
 
 # Generate Experiment Directory 
-folder = "/home/collins/Simulation_Data/E_I_"+sys.argv[5]+"/"+filename
+folder = "/home/collins/Simulation_Data/"+sys.argv[5]+"/"+filename
 if not os.path.exists(folder):
     os.makedirs(folder)
 
