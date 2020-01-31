@@ -1,0 +1,58 @@
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+Traceback (most recent call last):
+  File "antennalLobe.py", line 27, in <module>
+    t = np.load("time.npy",allow_pickle=True)[int(sys.argv[1])]        # duration of simulation
+  File "/home/collins/.local/lib/python3.7/site-packages/numpy/lib/npyio.py", line 428, in load
+    fid = open(os_fspath(file), "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'time.npy'
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+Traceback (most recent call last):
+  File "antennalLobe.py", line 27, in <module>
+    t = np.load("time.npy",allow_pickle=True)[int(sys.argv[1])]        # duration of simulation
+  File "/home/collins/.local/lib/python3.7/site-packages/numpy/lib/npyio.py", line 428, in load
+    fid = open(os_fspath(file), "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'time.npy'
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+Traceback (most recent call last):
+  File "antennalLobe.py", line 27, in <module>
+    t = np.load("time.npy",allow_pickle=True)[int(sys.argv[1])]        # duration of simulation
+  File "/home/collins/.local/lib/python3.7/site-packages/numpy/lib/npyio.py", line 428, in load
+    fid = open(os_fspath(file), "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'time.npy'
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+Traceback (most recent call last):
+  File "antennalLobe.py", line 27, in <module>
+    t = np.load("time.npy",allow_pickle=True)[int(sys.argv[1])]        # duration of simulation
+  File "/home/collins/.local/lib/python3.7/site-packages/numpy/lib/npyio.py", line 428, in load
+    fid = open(os_fspath(file), "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'time.npy'
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+Traceback (most recent call last):
+  File "antennalLobe.py", line 27, in <module>
+    t = np.load("time.npy",allow_pickle=True)[int(sys.argv[1])]        # duration of simulation
+  File "/home/collins/.local/lib/python3.7/site-packages/numpy/lib/npyio.py", line 428, in load
+    fid = open(os_fspath(file), "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'time.npy'
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+Traceback (most recent call last):
+  File "antennalLobe.py", line 27, in <module>
+    t = np.load("time.npy",allow_pickle=True)[int(sys.argv[1])]        # duration of simulation
+  File "/home/collins/.local/lib/python3.7/site-packages/numpy/lib/npyio.py", line 428, in load
+    fid = open(os_fspath(file), "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'time.npy'
+Traceback (most recent call last):
+  File "/home/collins/Param_test/initExperiment.py", line 49, in <module>
+    os.remove('state_vector.npy')
+FileNotFoundError: [Errno 2] No such file or directory: 'state_vector.npy'
