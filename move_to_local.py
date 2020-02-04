@@ -18,10 +18,10 @@ for a in os.listdir('/home/collins/Simulation_Data/'):
 				print(i+j)
 		# Concatenate all the matrix to get a single state matrix
 		overall_state = np.concatenate(overall_state)
-		folder = '/home/collins/clean_data/'+a+'/'+b+'/'
+		folder = '/home/collins/Param_data/'+a+'/'+b+'/'
 		if not os.path.exists(folder):
 			os.makedirs(folder)
 		np.save(folder+"AL_output",overall_state[::100,:])
 
-call(['scp','-r',"/home/collins/clean_data","iiser@192.168.8.104:/home/iiser/Collins-Saptarshi 2019b/Param_data"])
+call(['scp','-r',"/home/collins/Param_data","iiser@192.168.8.104:/home/iiser/Collins-Saptarshi\ 2019b/"])
 	
