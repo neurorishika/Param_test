@@ -6,17 +6,17 @@ SLURM_ARRAY_TASK_COUNT =
 SLURM_ARRAY_TASK_MAX = 
 SLURM_ARRAY_TASK_MIN = 
 SLURM_JOB_ACCOUNT = bio
-SLURM_JOB_ID = 33741
+SLURM_JOB_ID = 33745
 SLURM_JOB_NAME = tensorflow
-SLURM_JOB_NODELIST = cn015
+SLURM_JOB_NODELIST = cn016
 SLURM_JOB_USER = collins
 SLURM_JOB_UID = 7009
 SLURM_JOB_PARTITION = standard
-SLURM_TASK_PID = 36100
+SLURM_TASK_PID = 14464
 SLURM_SUBMIT_DIR = /home/collins/Param_test
 SLURM_CPUS_ON_NODE = 48
 SLURM_NTASKS = 48
-SLURM_TASK_PID = 36100
+SLURM_TASK_PID = 14464
 ==========================================
 Welcome to the ORNs !!!
 Generating ORN Responses...
@@ -29,30 +29,30 @@ Generation Complete
 'Information has been transferred to the Antennal Lobe. Thank you for using our services.' - ORNs
 Number of Neurons: 120
 Number of Synapses: 5023
-Batch 1 Running...Session started...Finished in 218.18 secs...Saving...Saved ( Execution Time: 218.859 secs )
-Completed 1 Segment(s). Total Execution Time: 218.861 secs
+Batch 1 Running...Session started...Finished in 222.5 secs...Saving...Saved ( Execution Time: 223.104 secs )
+Completed 1 Segment(s). Total Execution Time: 223.106 secs
 Number of Neurons: 120
 Number of Synapses: 5023
-Batch 1 Running...Session started...Finished in 267.92 secs...Saving...Saved ( Execution Time: 268.536 secs )
-Completed 2 Segment(s). Total Execution Time: 268.537 secs
+Batch 1 Running...Session started...Finished in 266.31 secs...Saving...Saved ( Execution Time: 266.874 secs )
+Completed 2 Segment(s). Total Execution Time: 266.876 secs
 Number of Neurons: 120
 Number of Synapses: 5023
-Batch 1 Running...Session started...Finished in 291.12 secs...Saving...Saved ( Execution Time: 291.668 secs )
-Completed 3 Segment(s). Total Execution Time: 291.669 secs
+Batch 1 Running...Session started...Finished in 297.25 secs...Saving...Saved ( Execution Time: 297.77 secs )
+Completed 3 Segment(s). Total Execution Time: 297.771 secs
 Number of Neurons: 120
 Number of Synapses: 5023
-Batch 1 Running...Session started...Finished in 302.81 secs...Saving...Saved ( Execution Time: 303.364 secs )
-Completed 4 Segment(s). Total Execution Time: 303.365 secs
+Batch 1 Running...Session started...Finished in 300.26 secs...Saving...Saved ( Execution Time: 300.801 secs )
+Completed 4 Segment(s). Total Execution Time: 300.802 secs
 Number of Neurons: 120
 Number of Synapses: 5023
-Batch 1 Running...Session started...Finished in 299.88 secs...Saving...Saved ( Execution Time: 300.423 secs )
-Completed 5 Segment(s). Total Execution Time: 300.425 secs
+Batch 1 Running...Session started...Finished in 298.68 secs...Saving...Saved ( Execution Time: 299.302 secs )
+Completed 5 Segment(s). Total Execution Time: 299.304 secs
 Number of Neurons: 120
 Number of Synapses: 5023
-Batch 1 Running...Session started...Finished in 288.48 secs...Saving...Saved ( Execution Time: 289.035 secs )
-Completed 6 Segment(s). Total Execution Time: 289.037 secs
+Batch 1 Running...Session started...Finished in 320.48 secs...Saving...Saved ( Execution Time: 321.061 secs )
+Completed 6 Segment(s). Total Execution Time: 321.062 secs
 Metadata Acquired. Starting Simulation.
 Welcome to the AL !!!
-Simulation Completed. Time taken: 1825.90
+Simulation Completed. Time taken: 1859.16
 'Thank you for using our services.'-AL
 Program Complete.
