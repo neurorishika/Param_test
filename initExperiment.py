@@ -8,10 +8,9 @@ from shutil import copyfile,copy,move
 import sys
 
 # Select the Odorant, Odor Delivery Protocol, Locust Model
-odor_path = sys.argv[1]# easygui.fileopenbox(msg='Open Odor File',title='Odor Browser',default='/home/iiser/Collins-Saptarshi 2019b/DAMN/A. Odors/*.odor',filetypes=['*.odor'])
-protocol_path = sys.argv[2]# easygui.fileopenbox(msg='Open Protocol File',title='Odor Protocol Browser',default='/home/iiser/Collins-Saptarshi 2019b/DAMN/A. Odor Protocols/*.protocol',filetypes=['*.protocol'])
-locust_path = sys.argv[3]# easygui.fileopenbox(msg='Open Locust File',title='Locust Browser',default='/home/iiser/Collins-Saptarshi 2019b/DAMN/A. Locusts/*.locust',filetypes=['*.locust'])
-
+odor_path = sys.argv[1]
+protocol_path = sys.argv[2]
+locust_path = sys.argv[3]
 
 # Get Experiment Date metadata
 dt = datetime.datetime.now()

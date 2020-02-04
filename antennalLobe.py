@@ -75,7 +75,7 @@ t_max = 0.3                          # Maximum Time for Synapse
 t_delay = 0                          # Axonal Transmission Delay
 A = [0.5]*n_n                        # Synaptic Response Strength
 # g_ach = [0.09]*p_n+[0.45]*l_n         # Ach Conductance
-g_ach = [0.0]*p_n+[0.0]*l_n         # Ach Conductance
+g_ach = [0.0]*p_n+[0.3]*l_n         # Ach Conductance
 E_ach = [0.0]*n_n                    # Ach Potential
 
 ## Defining GABAa Synapse Connectivity ##
@@ -91,7 +91,7 @@ V0 = [-20.0]*n_n                     # Decay Potential
 sigma = [1.5]*n_n                    # Decay Time Constant
 # g_fgaba = [0.36]*p_n+[0.3]*l_n        # fGABA Conductance
 # g_fgaba = [1.3]*p_n+[0.8]*l_n        # fGABA Conductance
-g_fgaba = [1.3]*p_n+[0.8]*l_n        # fGABA Conductance
+g_fgaba = [0.0]*p_n+[0.8]*l_n        # fGABA Conductance
 E_fgaba = [-70.0]*n_n                # fGABA Potential
 
 ## Defining GABAslow Synapse Connectivity ##

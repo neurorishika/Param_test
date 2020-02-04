@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh 
 
 sbatch scripts/a1.sh
 sbatch scripts/a2.sh
