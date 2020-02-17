@@ -48,7 +48,7 @@ np.save(folder+'/time',time)
 print("Welcome to the AL !!!")
 
 for i in range(data['n_split']):
-    call(['python','/home/collins/Param_test/antennalLobe.py',str(i), locust_path, protocol_path, sys.argv[5], folder])
+    call(['python','/home/collins/Param_test/antennalLobe.py',str(i), locust_path, protocol_path, sys.argv[5], folder, sys.argv[6]])
 
 os.remove(folder+'/state_vector.npy')
 os.remove(folder+'/time.npy')
