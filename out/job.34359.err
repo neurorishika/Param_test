@@ -1,0 +1,58 @@
+Traceback (most recent call last):
+  File "/home/collins/Param_test/initExperiment.py", line 27, in <module>
+    os.makedirs(folder)
+  File "/home/apps/anaconda3/lib/python3.7/os.py", line 221, in makedirs
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/home/collins/Simulation_Data/Wide_EIB_GABAALNPN_0.5/OdorA_High_Dur_6000_OdorDur_1000_Locust_A_0'
+Traceback (most recent call last):
+  File "/home/collins/Param_test/initExperiment.py", line 27, in <module>
+    os.makedirs(folder)
+  File "/home/apps/anaconda3/lib/python3.7/os.py", line 221, in makedirs
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/home/collins/Simulation_Data/Wide_EIB_GABAALNPN_0.5/OdorA_High_Dur_6000_OdorDur_1000_Locust_A_0'
+Traceback (most recent call last):
+  File "/home/collins/Param_test/initExperiment.py", line 27, in <module>
+    os.makedirs(folder)
+  File "/home/apps/anaconda3/lib/python3.7/os.py", line 221, in makedirs
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/home/collins/Simulation_Data/Wide_EIB_GABAALNPN_0.5/OdorA_High_Dur_6000_OdorDur_1000_Locust_A_0'
+Traceback (most recent call last):
+  File "/home/collins/Param_test/initExperiment.py", line 27, in <module>
+    os.makedirs(folder)
+  File "/home/apps/anaconda3/lib/python3.7/os.py", line 221, in makedirs
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/home/collins/Simulation_Data/Wide_EIB_GABAALNPN_0.5/OdorA_High_Dur_6000_OdorDur_1000_Locust_A_0'
+Traceback (most recent call last):
+  File "/home/collins/Param_test/initExperiment.py", line 27, in <module>
+    os.makedirs(folder)
+  File "/home/apps/anaconda3/lib/python3.7/os.py", line 221, in makedirs
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/home/collins/Simulation_Data/Wide_EIB_GABAALNPN_0.5/OdorA_High_Dur_6000_OdorDur_1000_Locust_A_0'
+Traceback (most recent call last):
+  File "/home/collins/Param_test/initExperiment.py", line 27, in <module>
+    os.makedirs(folder)
+  File "/home/apps/anaconda3/lib/python3.7/os.py", line 221, in makedirs
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/home/collins/Simulation_Data/Wide_EIB_GABAALNPN_0.5/OdorA_High_Dur_6000_OdorDur_1000_Locust_A_0'
+Traceback (most recent call last):
+  File "/home/collins/Param_test/initExperiment.py", line 27, in <module>
+    os.makedirs(folder)
+  File "/home/apps/anaconda3/lib/python3.7/os.py", line 221, in makedirs
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/home/collins/Simulation_Data/Wide_EIB_GABAALNPN_0.5/OdorA_High_Dur_6000_OdorDur_1000_Locust_A_0'
+srun: error: cn100: tasks 1,17,25,32,36,44,47: Exited with exit code 1
+Traceback (most recent call last):
+  File "/home/collins/Param_test/receptorLayer.py", line 102, in <module>
+    random_normal = np.random.normal(size=orns.shape)
+  File "mtrand.pyx", line 1484, in numpy.random.mtrand.RandomState.normal
+  File "_common.pyx", line 558, in numpy.random._common.cont
+MemoryError: Unable to allocate 4.47 GiB for an array with shape (1000, 600000) and data type float64
+Traceback (most recent call last):
+  File "/home/collins/Param_test/receptorLayer.py", line 102, in <module>
+    random_normal = np.random.normal(size=orns.shape)
+  File "mtrand.pyx", line 1484, in numpy.random.mtrand.RandomState.normal
+  File "_common.pyx", line 558, in numpy.random._common.cont
+MemoryError: Unable to allocate 4.47 GiB for an array with shape (1000, 600000) and data type float64
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 34359 ON cn100 CANCELLED AT 2020-02-18T12:36:10 ***
+slurmstepd: error: *** STEP 34359.0 ON cn100 CANCELLED AT 2020-02-18T12:36:10 ***

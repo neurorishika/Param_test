@@ -1,0 +1,69 @@
+Traceback (most recent call last):
+  File "/home/collins/Param_test/initExperiment.py", line 27, in <module>
+    os.makedirs(folder)
+  File "/home/apps/anaconda3/lib/python3.7/os.py", line 221, in makedirs
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/home/collins/Simulation_Data/Wide_EIB_GABAALNPN_0.5/OdorA_High_Dur_6000_OdorDur_1000_Locust_A_4'
+Traceback (most recent call last):
+  File "/home/collins/Param_test/initExperiment.py", line 27, in <module>
+    os.makedirs(folder)
+  File "/home/apps/anaconda3/lib/python3.7/os.py", line 221, in makedirs
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/home/collins/Simulation_Data/Wide_EIB_GABAALNPN_0.5/OdorA_High_Dur_6000_OdorDur_1000_Locust_A_4'
+Traceback (most recent call last):
+  File "/home/collins/Param_test/initExperiment.py", line 27, in <module>
+    os.makedirs(folder)
+  File "/home/apps/anaconda3/lib/python3.7/os.py", line 221, in makedirs
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/home/collins/Simulation_Data/Wide_EIB_GABAALNPN_0.5/OdorA_High_Dur_6000_OdorDur_1000_Locust_A_4'
+Traceback (most recent call last):
+  File "/home/collins/Param_test/initExperiment.py", line 27, in <module>
+    os.makedirs(folder)
+  File "/home/apps/anaconda3/lib/python3.7/os.py", line 221, in makedirs
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/home/collins/Simulation_Data/Wide_EIB_GABAALNPN_0.5/OdorA_High_Dur_6000_OdorDur_1000_Locust_A_4'
+Traceback (most recent call last):
+  File "/home/collins/Param_test/initExperiment.py", line 27, in <module>
+    os.makedirs(folder)
+  File "/home/apps/anaconda3/lib/python3.7/os.py", line 221, in makedirs
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/home/collins/Simulation_Data/Wide_EIB_GABAALNPN_0.5/OdorA_High_Dur_6000_OdorDur_1000_Locust_A_4'
+Traceback (most recent call last):
+  File "/home/collins/Param_test/initExperiment.py", line 27, in <module>
+    os.makedirs(folder)
+  File "/home/apps/anaconda3/lib/python3.7/os.py", line 221, in makedirs
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/home/collins/Simulation_Data/Wide_EIB_GABAALNPN_0.5/OdorA_High_Dur_6000_OdorDur_1000_Locust_A_4'
+Traceback (most recent call last):
+  File "/home/collins/Param_test/initExperiment.py", line 27, in <module>
+    os.makedirs(folder)
+  File "/home/apps/anaconda3/lib/python3.7/os.py", line 221, in makedirs
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/home/collins/Simulation_Data/Wide_EIB_GABAALNPN_0.5/OdorA_High_Dur_6000_OdorDur_1000_Locust_A_4'
+Traceback (most recent call last):
+  File "/home/collins/Param_test/initExperiment.py", line 27, in <module>
+    os.makedirs(folder)
+  File "/home/apps/anaconda3/lib/python3.7/os.py", line 221, in makedirs
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/home/collins/Simulation_Data/Wide_EIB_GABAALNPN_0.5/OdorA_High_Dur_6000_OdorDur_1000_Locust_A_4'
+Traceback (most recent call last):
+  File "/home/collins/Param_test/initExperiment.py", line 27, in <module>
+    os.makedirs(folder)
+  File "/home/apps/anaconda3/lib/python3.7/os.py", line 221, in makedirs
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/home/collins/Simulation_Data/Wide_EIB_GABAALNPN_0.5/OdorA_High_Dur_6000_OdorDur_1000_Locust_A_4'
+Traceback (most recent call last):
+  File "/home/collins/Param_test/initExperiment.py", line 27, in <module>
+    os.makedirs(folder)
+  File "/home/apps/anaconda3/lib/python3.7/os.py", line 221, in makedirs
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/home/collins/Simulation_Data/Wide_EIB_GABAALNPN_0.5/OdorA_High_Dur_6000_OdorDur_1000_Locust_A_4'
+Traceback (most recent call last):
+  File "/home/collins/Param_test/initExperiment.py", line 27, in <module>
+    os.makedirs(folder)
+  File "/home/apps/anaconda3/lib/python3.7/os.py", line 221, in makedirs
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/home/collins/Simulation_Data/Wide_EIB_GABAALNPN_0.5/OdorA_High_Dur_6000_OdorDur_1000_Locust_A_4'
+srun: error: cn086: tasks 5,11-12,14,17,21,25,27,31,43,45: Exited with exit code 1
+slurmstepd: error: *** JOB 34363 ON cn086 CANCELLED AT 2020-02-18T12:36:08 ***
+slurmstepd: error: *** STEP 34363.0 ON cn086 CANCELLED AT 2020-02-18T12:36:08 ***

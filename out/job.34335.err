@@ -1,0 +1,776 @@
+Traceback (most recent call last):
+  File "/home/collins/Param_test/initExperiment.py", line 51, in <module>
+    call(['python','/home/collins/Param_test/antennalLobe.py',str(i), locust_path, protocol_path, sys.argv[5], folder, sys.argv[6]])
+  File "/home/apps/anaconda3/lib/python3.7/subprocess.py", line 323, in call
+    with Popen(*popenargs, **kwargs) as p:
+  File "/home/apps/anaconda3/lib/python3.7/subprocess.py", line 775, in __init__
+    restore_signals, start_new_session)
+  File "/home/apps/anaconda3/lib/python3.7/subprocess.py", line 1453, in _execute_child
+    restore_signals, start_new_session, preexec_fn)
+OSError: [Errno 12] Cannot allocate memory
+srun: error: cn099: task 34: Exited with exit code 1
+Traceback (most recent call last):
+  File "/home/collins/Param_test/initExperiment.py", line 51, in <module>
+    call(['python','/home/collins/Param_test/antennalLobe.py',str(i), locust_path, protocol_path, sys.argv[5], folder, sys.argv[6]])
+  File "/home/apps/anaconda3/lib/python3.7/subprocess.py", line 323, in call
+    with Popen(*popenargs, **kwargs) as p:
+  File "/home/apps/anaconda3/lib/python3.7/subprocess.py", line 775, in __init__
+    restore_signals, start_new_session)
+  File "/home/apps/anaconda3/lib/python3.7/subprocess.py", line 1453, in _execute_child
+    restore_signals, start_new_session, preexec_fn)
+OSError: [Errno 12] Cannot allocate memory
+srun: error: cn099: task 23: Exited with exit code 1
+Traceback (most recent call last):
+  File "/home/collins/Param_test/receptorLayer.py", line 102, in <module>
+    random_normal = np.random.normal(size=orns.shape)
+  File "mtrand.pyx", line 1484, in numpy.random.mtrand.RandomState.normal
+  File "_common.pyx", line 558, in numpy.random._common.cont
+MemoryError: Unable to allocate 4.47 GiB for an array with shape (1000, 600000) and data type float64
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+Traceback (most recent call last):
+  File "/home/collins/Param_test/antennalLobe.py", line 403, in <module>
+    tensor_state = tf_int.odeint(dXdt, init_state, t, n_n, F_b)
+  File "/home/collins/Param_test/tf_integrator.py", line 78, in odeint
+    return _Tf_Integrator(n_, F_b).integrate(func,y0,t)
+  File "/home/collins/Param_test/tf_integrator.py", line 59, in integrate
+    y = tf.scan(scan_func, (t[:-1], time_delta_grid),y0)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/functional_ops.py", line 508, in scan
+    maximum_iterations=n)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/control_flow_ops.py", line 2753, in while_loop
+    return_same_structure)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/control_flow_ops.py", line 2245, in BuildLoop
+    pred, body, original_loop_vars, loop_vars, shape_invariants)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/control_flow_ops.py", line 2170, in _BuildLoop
+    body_result = body(*packed_vars_for_body)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/control_flow_ops.py", line 2705, in <lambda>
+    body = lambda i, lv: (i + 1, orig_body(*lv))
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/functional_ops.py", line 485, in compute
+    a_out = fn(packed_a, packed_elems)
+  File "/home/collins/Param_test/tf_integrator.py", line 28, in scan_func
+    dy = self._step_func(func,t,dt,y) # Make code more modular.
+  File "/home/collins/Param_test/tf_integrator.py", line 64, in _step_func
+    k1 = func(y, t)
+  File "/home/collins/Param_test/antennalLobe.py", line 326, in dXdt
+    dV = (-I_inj_t(t,V) + CmdV - I_K(V, n_K) - I_L(V) - I_ach(o_ach,V) - I_fgaba(o_fgaba,V) - I_sgaba(g_sgaba,V)) / C_m
+  File "/home/collins/Param_test/antennalLobe.py", line 255, in I_inj_t
+    return tf.constant(current_input.T,dtype=tf.float64)[tf.to_int32(t*100)]*(V-E_ach)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/framework/constant_op.py", line 161, in constant_v1
+    allow_broadcast=False)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/framework/constant_op.py", line 296, in _constant_impl
+    allow_broadcast=allow_broadcast))
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/framework/tensor_util.py", line 434, in make_tensor_proto
+    nparray = values.astype(dtype.as_numpy_dtype)
+MemoryError: Unable to allocate 549. MiB for an array with shape (600000, 120) and data type float64
+Traceback (most recent call last):
+  File "/home/collins/Param_test/antennalLobe.py", line 403, in <module>
+    tensor_state = tf_int.odeint(dXdt, init_state, t, n_n, F_b)
+  File "/home/collins/Param_test/tf_integrator.py", line 78, in odeint
+    return _Tf_Integrator(n_, F_b).integrate(func,y0,t)
+  File "/home/collins/Param_test/tf_integrator.py", line 59, in integrate
+    y = tf.scan(scan_func, (t[:-1], time_delta_grid),y0)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/functional_ops.py", line 508, in scan
+    maximum_iterations=n)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/control_flow_ops.py", line 2753, in while_loop
+    return_same_structure)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/control_flow_ops.py", line 2245, in BuildLoop
+    pred, body, original_loop_vars, loop_vars, shape_invariants)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/control_flow_ops.py", line 2170, in _BuildLoop
+    body_result = body(*packed_vars_for_body)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/control_flow_ops.py", line 2705, in <lambda>
+    body = lambda i, lv: (i + 1, orig_body(*lv))
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/functional_ops.py", line 485, in compute
+    a_out = fn(packed_a, packed_elems)
+  File "/home/collins/Param_test/tf_integrator.py", line 28, in scan_func
+    dy = self._step_func(func,t,dt,y) # Make code more modular.
+  File "/home/collins/Param_test/tf_integrator.py", line 64, in _step_func
+    k1 = func(y, t)
+  File "/home/collins/Param_test/antennalLobe.py", line 326, in dXdt
+    dV = (-I_inj_t(t,V) + CmdV - I_K(V, n_K) - I_L(V) - I_ach(o_ach,V) - I_fgaba(o_fgaba,V) - I_sgaba(g_sgaba,V)) / C_m
+  File "/home/collins/Param_test/antennalLobe.py", line 255, in I_inj_t
+    return tf.constant(current_input.T,dtype=tf.float64)[tf.to_int32(t*100)]*(V-E_ach)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/framework/constant_op.py", line 161, in constant_v1
+    allow_broadcast=False)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/framework/constant_op.py", line 296, in _constant_impl
+    allow_broadcast=allow_broadcast))
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/framework/tensor_util.py", line 434, in make_tensor_proto
+    nparray = values.astype(dtype.as_numpy_dtype)
+MemoryError: Unable to allocate 549. MiB for an array with shape (600000, 120) and data type float64
+Traceback (most recent call last):
+  File "/home/collins/Param_test/antennalLobe.py", line 403, in <module>
+    tensor_state = tf_int.odeint(dXdt, init_state, t, n_n, F_b)
+  File "/home/collins/Param_test/tf_integrator.py", line 78, in odeint
+    return _Tf_Integrator(n_, F_b).integrate(func,y0,t)
+  File "/home/collins/Param_test/tf_integrator.py", line 59, in integrate
+    y = tf.scan(scan_func, (t[:-1], time_delta_grid),y0)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/functional_ops.py", line 508, in scan
+    maximum_iterations=n)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/control_flow_ops.py", line 2753, in while_loop
+    return_same_structure)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/control_flow_ops.py", line 2245, in BuildLoop
+    pred, body, original_loop_vars, loop_vars, shape_invariants)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/control_flow_ops.py", line 2170, in _BuildLoop
+    body_result = body(*packed_vars_for_body)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/control_flow_ops.py", line 2705, in <lambda>
+    body = lambda i, lv: (i + 1, orig_body(*lv))
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/functional_ops.py", line 485, in compute
+    a_out = fn(packed_a, packed_elems)
+  File "/home/collins/Param_test/tf_integrator.py", line 28, in scan_func
+    dy = self._step_func(func,t,dt,y) # Make code more modular.
+  File "/home/collins/Param_test/tf_integrator.py", line 64, in _step_func
+    k1 = func(y, t)
+  File "/home/collins/Param_test/antennalLobe.py", line 326, in dXdt
+    dV = (-I_inj_t(t,V) + CmdV - I_K(V, n_K) - I_L(V) - I_ach(o_ach,V) - I_fgaba(o_fgaba,V) - I_sgaba(g_sgaba,V)) / C_m
+  File "/home/collins/Param_test/antennalLobe.py", line 255, in I_inj_t
+    return tf.constant(current_input.T,dtype=tf.float64)[tf.to_int32(t*100)]*(V-E_ach)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/framework/constant_op.py", line 161, in constant_v1
+    allow_broadcast=False)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/framework/constant_op.py", line 296, in _constant_impl
+    allow_broadcast=allow_broadcast))
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/framework/tensor_util.py", line 434, in make_tensor_proto
+    nparray = values.astype(dtype.as_numpy_dtype)
+MemoryError: Unable to allocate 549. MiB for an array with shape (600000, 120) and data type float64
+Traceback (most recent call last):
+  File "/home/collins/Param_test/antennalLobe.py", line 403, in <module>
+    tensor_state = tf_int.odeint(dXdt, init_state, t, n_n, F_b)
+  File "/home/collins/Param_test/tf_integrator.py", line 78, in odeint
+    return _Tf_Integrator(n_, F_b).integrate(func,y0,t)
+  File "/home/collins/Param_test/tf_integrator.py", line 59, in integrate
+    y = tf.scan(scan_func, (t[:-1], time_delta_grid),y0)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/functional_ops.py", line 508, in scan
+    maximum_iterations=n)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/control_flow_ops.py", line 2753, in while_loop
+    return_same_structure)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/control_flow_ops.py", line 2245, in BuildLoop
+    pred, body, original_loop_vars, loop_vars, shape_invariants)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/control_flow_ops.py", line 2170, in _BuildLoop
+    body_result = body(*packed_vars_for_body)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/control_flow_ops.py", line 2705, in <lambda>
+    body = lambda i, lv: (i + 1, orig_body(*lv))
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/functional_ops.py", line 485, in compute
+    a_out = fn(packed_a, packed_elems)
+  File "/home/collins/Param_test/tf_integrator.py", line 28, in scan_func
+    dy = self._step_func(func,t,dt,y) # Make code more modular.
+  File "/home/collins/Param_test/tf_integrator.py", line 64, in _step_func
+    k1 = func(y, t)
+  File "/home/collins/Param_test/antennalLobe.py", line 326, in dXdt
+    dV = (-I_inj_t(t,V) + CmdV - I_K(V, n_K) - I_L(V) - I_ach(o_ach,V) - I_fgaba(o_fgaba,V) - I_sgaba(g_sgaba,V)) / C_m
+  File "/home/collins/Param_test/antennalLobe.py", line 255, in I_inj_t
+    return tf.constant(current_input.T,dtype=tf.float64)[tf.to_int32(t*100)]*(V-E_ach)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/framework/constant_op.py", line 161, in constant_v1
+    allow_broadcast=False)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/framework/constant_op.py", line 296, in _constant_impl
+    allow_broadcast=allow_broadcast))
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/framework/tensor_util.py", line 434, in make_tensor_proto
+    nparray = values.astype(dtype.as_numpy_dtype)
+MemoryError: Unable to allocate 549. MiB for an array with shape (600000, 120) and data type float64
+Traceback (most recent call last):
+  File "/home/collins/Param_test/antennalLobe.py", line 403, in <module>
+    tensor_state = tf_int.odeint(dXdt, init_state, t, n_n, F_b)
+  File "/home/collins/Param_test/tf_integrator.py", line 78, in odeint
+    return _Tf_Integrator(n_, F_b).integrate(func,y0,t)
+  File "/home/collins/Param_test/tf_integrator.py", line 59, in integrate
+    y = tf.scan(scan_func, (t[:-1], time_delta_grid),y0)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/functional_ops.py", line 508, in scan
+    maximum_iterations=n)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/control_flow_ops.py", line 2753, in while_loop
+    return_same_structure)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/control_flow_ops.py", line 2245, in BuildLoop
+    pred, body, original_loop_vars, loop_vars, shape_invariants)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/control_flow_ops.py", line 2170, in _BuildLoop
+    body_result = body(*packed_vars_for_body)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/control_flow_ops.py", line 2705, in <lambda>
+    body = lambda i, lv: (i + 1, orig_body(*lv))
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/functional_ops.py", line 485, in compute
+    a_out = fn(packed_a, packed_elems)
+  File "/home/collins/Param_test/tf_integrator.py", line 28, in scan_func
+    dy = self._step_func(func,t,dt,y) # Make code more modular.
+  File "/home/collins/Param_test/tf_integrator.py", line 64, in _step_func
+    k1 = func(y, t)
+  File "/home/collins/Param_test/antennalLobe.py", line 326, in dXdt
+    dV = (-I_inj_t(t,V) + CmdV - I_K(V, n_K) - I_L(V) - I_ach(o_ach,V) - I_fgaba(o_fgaba,V) - I_sgaba(g_sgaba,V)) / C_m
+  File "/home/collins/Param_test/antennalLobe.py", line 255, in I_inj_t
+    return tf.constant(current_input.T,dtype=tf.float64)[tf.to_int32(t*100)]*(V-E_ach)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/framework/constant_op.py", line 161, in constant_v1
+    allow_broadcast=False)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/framework/constant_op.py", line 296, in _constant_impl
+    allow_broadcast=allow_broadcast))
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/framework/tensor_util.py", line 434, in make_tensor_proto
+    nparray = values.astype(dtype.as_numpy_dtype)
+MemoryError: Unable to allocate 549. MiB for an array with shape (600000, 120) and data type float64
+Traceback (most recent call last):
+  File "/home/collins/Param_test/antennalLobe.py", line 403, in <module>
+    tensor_state = tf_int.odeint(dXdt, init_state, t, n_n, F_b)
+  File "/home/collins/Param_test/tf_integrator.py", line 78, in odeint
+    return _Tf_Integrator(n_, F_b).integrate(func,y0,t)
+  File "/home/collins/Param_test/tf_integrator.py", line 59, in integrate
+    y = tf.scan(scan_func, (t[:-1], time_delta_grid),y0)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/functional_ops.py", line 508, in scan
+    maximum_iterations=n)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/control_flow_ops.py", line 2753, in while_loop
+    return_same_structure)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/control_flow_ops.py", line 2245, in BuildLoop
+    pred, body, original_loop_vars, loop_vars, shape_invariants)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/control_flow_ops.py", line 2170, in _BuildLoop
+    body_result = body(*packed_vars_for_body)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/control_flow_ops.py", line 2705, in <lambda>
+    body = lambda i, lv: (i + 1, orig_body(*lv))
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/functional_ops.py", line 485, in compute
+    a_out = fn(packed_a, packed_elems)
+  File "/home/collins/Param_test/tf_integrator.py", line 28, in scan_func
+    dy = self._step_func(func,t,dt,y) # Make code more modular.
+  File "/home/collins/Param_test/tf_integrator.py", line 64, in _step_func
+    k1 = func(y, t)
+  File "/home/collins/Param_test/antennalLobe.py", line 326, in dXdt
+    dV = (-I_inj_t(t,V) + CmdV - I_K(V, n_K) - I_L(V) - I_ach(o_ach,V) - I_fgaba(o_fgaba,V) - I_sgaba(g_sgaba,V)) / C_m
+  File "/home/collins/Param_test/antennalLobe.py", line 255, in I_inj_t
+    return tf.constant(current_input.T,dtype=tf.float64)[tf.to_int32(t*100)]*(V-E_ach)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/framework/constant_op.py", line 161, in constant_v1
+    allow_broadcast=False)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/framework/constant_op.py", line 296, in _constant_impl
+    allow_broadcast=allow_broadcast))
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/framework/tensor_util.py", line 434, in make_tensor_proto
+    nparray = values.astype(dtype.as_numpy_dtype)
+MemoryError: Unable to allocate 549. MiB for an array with shape (600000, 120) and data type float64
+Traceback (most recent call last):
+  File "/home/collins/Param_test/antennalLobe.py", line 403, in <module>
+    tensor_state = tf_int.odeint(dXdt, init_state, t, n_n, F_b)
+  File "/home/collins/Param_test/tf_integrator.py", line 78, in odeint
+    return _Tf_Integrator(n_, F_b).integrate(func,y0,t)
+  File "/home/collins/Param_test/tf_integrator.py", line 59, in integrate
+    y = tf.scan(scan_func, (t[:-1], time_delta_grid),y0)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/functional_ops.py", line 508, in scan
+    maximum_iterations=n)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/control_flow_ops.py", line 2753, in while_loop
+    return_same_structure)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/control_flow_ops.py", line 2245, in BuildLoop
+    pred, body, original_loop_vars, loop_vars, shape_invariants)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/control_flow_ops.py", line 2170, in _BuildLoop
+    body_result = body(*packed_vars_for_body)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/control_flow_ops.py", line 2705, in <lambda>
+    body = lambda i, lv: (i + 1, orig_body(*lv))
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/functional_ops.py", line 485, in compute
+    a_out = fn(packed_a, packed_elems)
+  File "/home/collins/Param_test/tf_integrator.py", line 28, in scan_func
+    dy = self._step_func(func,t,dt,y) # Make code more modular.
+  File "/home/collins/Param_test/tf_integrator.py", line 64, in _step_func
+    k1 = func(y, t)
+  File "/home/collins/Param_test/antennalLobe.py", line 326, in dXdt
+    dV = (-I_inj_t(t,V) + CmdV - I_K(V, n_K) - I_L(V) - I_ach(o_ach,V) - I_fgaba(o_fgaba,V) - I_sgaba(g_sgaba,V)) / C_m
+  File "/home/collins/Param_test/antennalLobe.py", line 255, in I_inj_t
+    return tf.constant(current_input.T,dtype=tf.float64)[tf.to_int32(t*100)]*(V-E_ach)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/framework/constant_op.py", line 161, in constant_v1
+    allow_broadcast=False)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/framework/constant_op.py", line 296, in _constant_impl
+    allow_broadcast=allow_broadcast))
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/framework/tensor_util.py", line 434, in make_tensor_proto
+    nparray = values.astype(dtype.as_numpy_dtype)
+MemoryError: Unable to allocate 549. MiB for an array with shape (600000, 120) and data type float64
+Traceback (most recent call last):
+  File "/home/collins/Param_test/antennalLobe.py", line 403, in <module>
+    tensor_state = tf_int.odeint(dXdt, init_state, t, n_n, F_b)
+  File "/home/collins/Param_test/tf_integrator.py", line 78, in odeint
+    return _Tf_Integrator(n_, F_b).integrate(func,y0,t)
+  File "/home/collins/Param_test/tf_integrator.py", line 59, in integrate
+    y = tf.scan(scan_func, (t[:-1], time_delta_grid),y0)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/functional_ops.py", line 508, in scan
+    maximum_iterations=n)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/control_flow_ops.py", line 2753, in while_loop
+    return_same_structure)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/control_flow_ops.py", line 2245, in BuildLoop
+    pred, body, original_loop_vars, loop_vars, shape_invariants)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/control_flow_ops.py", line 2170, in _BuildLoop
+    body_result = body(*packed_vars_for_body)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/control_flow_ops.py", line 2705, in <lambda>
+    body = lambda i, lv: (i + 1, orig_body(*lv))
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/functional_ops.py", line 485, in compute
+    a_out = fn(packed_a, packed_elems)
+  File "/home/collins/Param_test/tf_integrator.py", line 28, in scan_func
+    dy = self._step_func(func,t,dt,y) # Make code more modular.
+  File "/home/collins/Param_test/tf_integrator.py", line 64, in _step_func
+    k1 = func(y, t)
+  File "/home/collins/Param_test/antennalLobe.py", line 326, in dXdt
+    dV = (-I_inj_t(t,V) + CmdV - I_K(V, n_K) - I_L(V) - I_ach(o_ach,V) - I_fgaba(o_fgaba,V) - I_sgaba(g_sgaba,V)) / C_m
+  File "/home/collins/Param_test/antennalLobe.py", line 255, in I_inj_t
+    return tf.constant(current_input.T,dtype=tf.float64)[tf.to_int32(t*100)]*(V-E_ach)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/framework/constant_op.py", line 161, in constant_v1
+    allow_broadcast=False)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/framework/constant_op.py", line 296, in _constant_impl
+    allow_broadcast=allow_broadcast))
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/framework/tensor_util.py", line 434, in make_tensor_proto
+    nparray = values.astype(dtype.as_numpy_dtype)
+MemoryError: Unable to allocate 549. MiB for an array with shape (600000, 120) and data type float64
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /home/collins/Param_test/antennalLobe.py:255: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+WARNING:tensorflow:From /home/collins/Param_test/antennalLobe.py:255: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+WARNING:tensorflow:From /home/collins/Param_test/antennalLobe.py:255: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+Traceback (most recent call last):
+  File "/home/collins/Param_test/antennalLobe.py", line 403, in <module>
+    tensor_state = tf_int.odeint(dXdt, init_state, t, n_n, F_b)
+  File "/home/collins/Param_test/tf_integrator.py", line 78, in odeint
+    return _Tf_Integrator(n_, F_b).integrate(func,y0,t)
+  File "/home/collins/Param_test/tf_integrator.py", line 59, in integrate
+    y = tf.scan(scan_func, (t[:-1], time_delta_grid),y0)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/functional_ops.py", line 508, in scan
+    maximum_iterations=n)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/control_flow_ops.py", line 2753, in while_loop
+    return_same_structure)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/control_flow_ops.py", line 2245, in BuildLoop
+    pred, body, original_loop_vars, loop_vars, shape_invariants)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/control_flow_ops.py", line 2170, in _BuildLoop
+    body_result = body(*packed_vars_for_body)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/control_flow_ops.py", line 2705, in <lambda>
+    body = lambda i, lv: (i + 1, orig_body(*lv))
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/functional_ops.py", line 485, in compute
+    a_out = fn(packed_a, packed_elems)
+  File "/home/collins/Param_test/tf_integrator.py", line 28, in scan_func
+    dy = self._step_func(func,t,dt,y) # Make code more modular.
+  File "/home/collins/Param_test/tf_integrator.py", line 68, in _step_func
+    k2 = func(y + dt_cast * k1 / 2, half_step)
+  File "/home/collins/Param_test/antennalLobe.py", line 326, in dXdt
+    dV = (-I_inj_t(t,V) + CmdV - I_K(V, n_K) - I_L(V) - I_ach(o_ach,V) - I_fgaba(o_fgaba,V) - I_sgaba(g_sgaba,V)) / C_m
+  File "/home/collins/Param_test/antennalLobe.py", line 255, in I_inj_t
+    return tf.constant(current_input.T,dtype=tf.float64)[tf.to_int32(t*100)]*(V-E_ach)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/framework/constant_op.py", line 161, in constant_v1
+    allow_broadcast=False)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/framework/constant_op.py", line 296, in _constant_impl
+    allow_broadcast=allow_broadcast))
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/framework/tensor_util.py", line 523, in make_tensor_proto
+    tensor_proto.tensor_content = nparray.tostring()
+MemoryError
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+WARNING:tensorflow:From /home/collins/Param_test/antennalLobe.py:255: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+WARNING:tensorflow:From /home/collins/Param_test/antennalLobe.py:255: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+WARNING:tensorflow:From /home/collins/Param_test/antennalLobe.py:255: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /home/collins/Param_test/antennalLobe.py:255: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+Traceback (most recent call last):
+  File "/home/collins/Param_test/antennalLobe.py", line 403, in <module>
+    tensor_state = tf_int.odeint(dXdt, init_state, t, n_n, F_b)
+  File "/home/collins/Param_test/tf_integrator.py", line 78, in odeint
+    return _Tf_Integrator(n_, F_b).integrate(func,y0,t)
+  File "/home/collins/Param_test/tf_integrator.py", line 59, in integrate
+    y = tf.scan(scan_func, (t[:-1], time_delta_grid),y0)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/functional_ops.py", line 508, in scan
+    maximum_iterations=n)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/control_flow_ops.py", line 2753, in while_loop
+    return_same_structure)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/control_flow_ops.py", line 2245, in BuildLoop
+    pred, body, original_loop_vars, loop_vars, shape_invariants)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/control_flow_ops.py", line 2170, in _BuildLoop
+    body_result = body(*packed_vars_for_body)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/control_flow_ops.py", line 2705, in <lambda>
+    body = lambda i, lv: (i + 1, orig_body(*lv))
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/functional_ops.py", line 485, in compute
+    a_out = fn(packed_a, packed_elems)
+  File "/home/collins/Param_test/tf_integrator.py", line 28, in scan_func
+    dy = self._step_func(func,t,dt,y) # Make code more modular.
+  File "/home/collins/Param_test/tf_integrator.py", line 69, in _step_func
+    k3 = func(y + dt_cast * k2 / 2, half_step)
+  File "/home/collins/Param_test/antennalLobe.py", line 326, in dXdt
+    dV = (-I_inj_t(t,V) + CmdV - I_K(V, n_K) - I_L(V) - I_ach(o_ach,V) - I_fgaba(o_fgaba,V) - I_sgaba(g_sgaba,V)) / C_m
+  File "/home/collins/Param_test/antennalLobe.py", line 255, in I_inj_t
+    return tf.constant(current_input.T,dtype=tf.float64)[tf.to_int32(t*100)]*(V-E_ach)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/framework/constant_op.py", line 161, in constant_v1
+    allow_broadcast=False)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/framework/constant_op.py", line 296, in _constant_impl
+    allow_broadcast=allow_broadcast))
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/framework/tensor_util.py", line 523, in make_tensor_proto
+    tensor_proto.tensor_content = nparray.tostring()
+MemoryError
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+Traceback (most recent call last):
+  File "/home/collins/Param_test/receptorLayer.py", line 116, in <module>
+    orns_spike = spike_generator(orns,0.01)
+  File "/home/collins/Param_test/receptorLayer.py", line 105, in spike_generator
+    spike = np.zeros(fr.shape)
+MemoryError: Unable to allocate 4.47 GiB for an array with shape (1000, 600000) and data type float64
+Traceback (most recent call last):
+  File "/home/collins/Param_test/receptorLayer.py", line 116, in <module>
+    orns_spike = spike_generator(orns,0.01)
+  File "/home/collins/Param_test/receptorLayer.py", line 105, in spike_generator
+    spike = np.zeros(fr.shape)
+MemoryError: Unable to allocate 4.47 GiB for an array with shape (1000, 600000) and data type float64
+WARNING:tensorflow:From /home/collins/Param_test/antennalLobe.py:255: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /home/collins/Param_test/antennalLobe.py:255: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+Traceback (most recent call last):
+  File "/home/collins/Param_test/receptorLayer.py", line 116, in <module>
+    orns_spike = spike_generator(orns,0.01)
+  File "/home/collins/Param_test/receptorLayer.py", line 105, in spike_generator
+    spike = np.zeros(fr.shape)
+MemoryError: Unable to allocate 4.47 GiB for an array with shape (1000, 600000) and data type float64
+Traceback (most recent call last):
+  File "/home/collins/Param_test/receptorLayer.py", line 116, in <module>
+    orns_spike = spike_generator(orns,0.01)
+  File "/home/collins/Param_test/receptorLayer.py", line 105, in spike_generator
+    spike = np.zeros(fr.shape)
+MemoryError: Unable to allocate 4.47 GiB for an array with shape (1000, 600000) and data type float64
+WARNING:tensorflow:From /home/collins/Param_test/antennalLobe.py:255: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+WARNING:tensorflow:From /home/collins/Param_test/antennalLobe.py:255: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+WARNING:tensorflow:From /home/collins/Param_test/antennalLobe.py:255: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+WARNING:tensorflow:From /home/collins/Param_test/antennalLobe.py:255: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+WARNING:tensorflow:From /home/collins/Param_test/antennalLobe.py:255: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+WARNING:tensorflow:From /home/collins/Param_test/antennalLobe.py:255: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /home/collins/Param_test/antennalLobe.py:255: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+WARNING:tensorflow:From /home/collins/Param_test/antennalLobe.py:255: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+2020-02-18 12:34:56.643350: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2020-02-18 12:34:56.656037: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2900000000 Hz
+2020-02-18 12:34:56.657033: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55cdca863d00 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-02-18 12:34:56.657060: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+WARNING:tensorflow:From /home/collins/Param_test/antennalLobe.py:255: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+2020-02-18 12:34:57.191947: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2020-02-18 12:34:57.206904: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2900000000 Hz
+2020-02-18 12:34:57.208688: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x56554b3fa6d0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-02-18 12:34:57.208713: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+2020-02-18 12:35:01.479515: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2020-02-18 12:35:01.546847: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2900000000 Hz
+2020-02-18 12:35:01.549967: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x56008ef09370 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-02-18 12:35:01.549998: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2020-02-18 12:35:01.618054: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 576000000 exceeds 10% of system memory.
+WARNING:tensorflow:From /home/collins/Param_test/antennalLobe.py:255: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+2020-02-18 12:35:01.917413: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 576000000 exceeds 10% of system memory.
+2020-02-18 12:35:01.954330: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2020-02-18 12:35:01.966941: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2900000000 Hz
+2020-02-18 12:35:01.971975: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55e08009aff0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-02-18 12:35:01.972027: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+terminate called after throwing an instance of 'std::bad_alloc'
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+  what():  std::bad_alloc
+WARNING:tensorflow:From /home/collins/Param_test/antennalLobe.py:255: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+2020-02-18 12:35:03.214946: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 576000000 exceeds 10% of system memory.
+2020-02-18 12:35:03.462042: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 576000000 exceeds 10% of system memory.
+2020-02-18 12:35:03.464459: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 576000000 exceeds 10% of system memory.
+WARNING:tensorflow:From /home/collins/Param_test/antennalLobe.py:255: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+WARNING:tensorflow:From /home/collins/Param_test/antennalLobe.py:255: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+2020-02-18 12:35:03.858947: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 576000000 exceeds 10% of system memory.
+2020-02-18 12:35:04.153707: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 576000000 exceeds 10% of system memory.
+2020-02-18 12:35:04.177305: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 576000000 exceeds 10% of system memory.
+2020-02-18 12:35:04.428511: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 576000000 exceeds 10% of system memory.
+2020-02-18 12:35:04.522551: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 576000000 exceeds 10% of system memory.
+2020-02-18 12:35:08.704348: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 576000000 exceeds 10% of system memory.
+2020-02-18 12:35:08.854437: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 576000000 exceeds 10% of system memory.
+2020-02-18 12:35:09.000052: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 576000000 exceeds 10% of system memory.
+2020-02-18 12:35:09.264832: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 576000000 exceeds 10% of system memory.
+2020-02-18 12:35:09.497446: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2020-02-18 12:35:09.576692: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2900000000 Hz
+2020-02-18 12:35:09.580856: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55d4bbbaa670 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-02-18 12:35:09.580902: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+WARNING:tensorflow:From /home/collins/Param_test/antennalLobe.py:255: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+WARNING:tensorflow:From /home/collins/Param_test/antennalLobe.py:255: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+WARNING:tensorflow:From /home/collins/Param_test/antennalLobe.py:255: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+2020-02-18 12:35:09.964326: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2020-02-18 12:35:09.984870: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2900000000 Hz
+2020-02-18 12:35:10.021344: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55ee52889940 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-02-18 12:35:10.021898: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-02-18 12:35:10.120026: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 576000000 exceeds 10% of system memory.
+2020-02-18 12:35:10.122266: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2020-02-18 12:35:10.131305: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2900000000 Hz
+2020-02-18 12:35:10.133774: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55908d82d6a0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-02-18 12:35:10.133816: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+WARNING:tensorflow:From /home/collins/Param_test/antennalLobe.py:255: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+2020-02-18 12:35:10.538164: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2020-02-18 12:35:10.558553: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2900000000 Hz
+2020-02-18 12:35:10.562473: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x558d1193da30 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-02-18 12:35:10.562525: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+WARNING:tensorflow:From /home/collins/Param_test/antennalLobe.py:255: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+2020-02-18 12:35:10.622230: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2020-02-18 12:35:10.640174: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2900000000 Hz
+2020-02-18 12:35:10.643678: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5575e9eaa9a0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-02-18 12:35:10.643733: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /home/collins/Param_test/antennalLobe.py:255: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+Traceback (most recent call last):
+  File "/home/collins/Param_test/antennalLobe.py", line 403, in <module>
+    tensor_state = tf_int.odeint(dXdt, init_state, t, n_n, F_b)
+  File "/home/collins/Param_test/tf_integrator.py", line 78, in odeint
+    return _Tf_Integrator(n_, F_b).integrate(func,y0,t)
+  File "/home/collins/Param_test/tf_integrator.py", line 59, in integrate
+    y = tf.scan(scan_func, (t[:-1], time_delta_grid),y0)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/functional_ops.py", line 508, in scan
+    maximum_iterations=n)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/control_flow_ops.py", line 2753, in while_loop
+    return_same_structure)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/control_flow_ops.py", line 2245, in BuildLoop
+    pred, body, original_loop_vars, loop_vars, shape_invariants)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/control_flow_ops.py", line 2170, in _BuildLoop
+    body_result = body(*packed_vars_for_body)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/control_flow_ops.py", line 2705, in <lambda>
+    body = lambda i, lv: (i + 1, orig_body(*lv))
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/functional_ops.py", line 485, in compute
+    a_out = fn(packed_a, packed_elems)
+  File "/home/collins/Param_test/tf_integrator.py", line 28, in scan_func
+    dy = self._step_func(func,t,dt,y) # Make code more modular.
+  File "/home/collins/Param_test/tf_integrator.py", line 68, in _step_func
+    k2 = func(y + dt_cast * k1 / 2, half_step)
+  File "/home/collins/Param_test/antennalLobe.py", line 326, in dXdt
+    dV = (-I_inj_t(t,V) + CmdV - I_K(V, n_K) - I_L(V) - I_ach(o_ach,V) - I_fgaba(o_fgaba,V) - I_sgaba(g_sgaba,V)) / C_m
+  File "/home/collins/Param_test/antennalLobe.py", line 255, in I_inj_t
+    return tf.constant(current_input.T,dtype=tf.float64)[tf.to_int32(t*100)]*(V-E_ach)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/framework/constant_op.py", line 161, in constant_v1
+    allow_broadcast=False)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/framework/constant_op.py", line 302, in _constant_impl
+    name=name).outputs[0]
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/framework/ops.py", line 3322, in _create_op_internal
+    op_def=op_def)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/framework/ops.py", line 1786, in __init__
+    control_input_ops)
+  File "/home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/framework/ops.py", line 1613, in _create_c_op
+    serialized = attr_value.SerializeToString()
+MemoryError
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+2020-02-18 12:35:12.499575: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2020-02-18 12:35:12.591423: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2900000000 Hz
+2020-02-18 12:35:12.594731: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55d8d200a0e0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-02-18 12:35:12.594770: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-02-18 12:35:12.640869: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2020-02-18 12:35:12.652203: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2900000000 Hz
+2020-02-18 12:35:12.653685: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55fdf3f9f490 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-02-18 12:35:12.653725: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+terminate called after throwing an instance of 'std::bad_alloc'
+terminate called after throwing an instance of 'std::bad_alloc'
+terminate called after throwing an instance of 'std::bad_alloc'
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+  what():  std::bad_alloc
+  what():  std::bad_alloc
+  what():  std::bad_alloc
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /home/collins/Param_test/antennalLobe.py:255: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+WARNING:tensorflow:From /home/collins/Param_test/antennalLobe.py:255: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+WARNING:tensorflow:From /home/collins/Param_test/antennalLobe.py:255: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+WARNING:tensorflow:From /home/collins/Param_test/antennalLobe.py:255: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+WARNING:tensorflow:From /home/collins/Param_test/antennalLobe.py:255: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+WARNING:tensorflow:From /home/collins/Param_test/antennalLobe.py:255: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+2020-02-18 12:35:17.945254: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2020-02-18 12:35:17.963445: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2900000000 Hz
+2020-02-18 12:35:17.966473: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5634e61e3560 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-02-18 12:35:17.966505: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-02-18 12:35:18.008027: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2020-02-18 12:35:18.020213: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2900000000 Hz
+2020-02-18 12:35:18.023049: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x561579659040 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-02-18 12:35:18.023080: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+terminate called after throwing an instance of 'std::bad_alloc'
+terminate called after throwing an instance of 'std::bad_alloc'
+terminate called after throwing an instance of 'std::bad_alloc'
+slurmstepd: error: *** STEP 34335.1 ON cn099 CANCELLED AT 2020-02-18T12:35:22 ***
+slurmstepd: error: *** JOB 34335 ON cn099 CANCELLED AT 2020-02-18T12:35:22 ***
