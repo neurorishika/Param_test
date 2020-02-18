@@ -16,13 +16,22 @@ name=$(cat "$file")
 name="${name}_2.0"
 
 module load python/3.7
-srun -N 1 python /home/collins/Param_test/initExperiment.py '/home/collins/Param_test/Od/OdorA_High.odor' '/home/collins/Param_test/Op/Dur_6000_OdorDur_1000.protocol' '/home/collins/Param_test/Lc/Locust_A.locust' $SLURM_ARRAY_TASK_ID $name '2.0'
-srun -N 1 python /home/collins/Param_test/initExperiment.py '/home/collins/Param_test/Od/OdorB_High.odor' '/home/collins/Param_test/Op/Dur_6000_OdorDur_1000.protocol' '/home/collins/Param_test/Lc/Locust_A.locust' $SLURM_ARRAY_TASK_ID $name '2.0'
-srun -N 1 python /home/collins/Param_test/initExperiment.py '/home/collins/Param_test/Od/OdorC_High.odor' '/home/collins/Param_test/Op/Dur_6000_OdorDur_1000.protocol' '/home/collins/Param_test/Lc/Locust_A.locust' $SLURM_ARRAY_TASK_ID $name '2.0'
-srun -N 1 python /home/collins/Param_test/initExperiment.py '/home/collins/Param_test/Od/OdorA_High.odor' '/home/collins/Param_test/Op/Dur_6000_OdorDur_1000.protocol' '/home/collins/Param_test/Lc/Locust_B.locust' $SLURM_ARRAY_TASK_ID $name '2.0'
-srun -N 1 python /home/collins/Param_test/initExperiment.py '/home/collins/Param_test/Od/OdorB_High.odor' '/home/collins/Param_test/Op/Dur_6000_OdorDur_1000.protocol' '/home/collins/Param_test/Lc/Locust_B.locust' $SLURM_ARRAY_TASK_ID $name '2.0'
-srun -N 1 python /home/collins/Param_test/initExperiment.py '/home/collins/Param_test/Od/OdorC_High.odor' '/home/collins/Param_test/Op/Dur_6000_OdorDur_1000.protocol' '/home/collins/Param_test/Lc/Locust_B.locust' $SLURM_ARRAY_TASK_ID $name '2.0'
-srun -N 1 python /home/collins/Param_test/initExperiment.py '/home/collins/Param_test/Od/OdorA_High.odor' '/home/collins/Param_test/Op/Dur_6000_OdorDur_1000.protocol' '/home/collins/Param_test/Lc/Locust_C.locust' $SLURM_ARRAY_TASK_ID $name '2.0'
-srun -N 1 python /home/collins/Param_test/initExperiment.py '/home/collins/Param_test/Od/OdorB_High.odor' '/home/collins/Param_test/Op/Dur_6000_OdorDur_1000.protocol' '/home/collins/Param_test/Lc/Locust_C.locust' $SLURM_ARRAY_TASK_ID $name '2.0'
-srun -N 1 python /home/collins/Param_test/initExperiment.py '/home/collins/Param_test/Od/OdorC_High.odor' '/home/collins/Param_test/Op/Dur_6000_OdorDur_1000.protocol' '/home/collins/Param_test/Lc/Locust_C.locust' $SLURM_ARRAY_TASK_ID $name '2.0'
+srun python /home/collins/Param_test/initExperiment.py '/home/collins/Param_test/Od/OdorA_High.odor' '/home/collins/Param_test/Op/Dur_6000_OdorDur_1000.protocol' '/home/collins/Param_test/Lc/Locust_A.locust' $SLURM_ARRAY_TASK_ID $name '2.0'
+sleep 5 && echo "Moving on..."
+srun python /home/collins/Param_test/initExperiment.py '/home/collins/Param_test/Od/OdorB_High.odor' '/home/collins/Param_test/Op/Dur_6000_OdorDur_1000.protocol' '/home/collins/Param_test/Lc/Locust_A.locust' $SLURM_ARRAY_TASK_ID $name '2.0'
+sleep 5 && echo "Moving on..."
+srun python /home/collins/Param_test/initExperiment.py '/home/collins/Param_test/Od/OdorC_High.odor' '/home/collins/Param_test/Op/Dur_6000_OdorDur_1000.protocol' '/home/collins/Param_test/Lc/Locust_A.locust' $SLURM_ARRAY_TASK_ID $name '2.0'
+sleep 5 && echo "Moving on..."
+srun python /home/collins/Param_test/initExperiment.py '/home/collins/Param_test/Od/OdorA_High.odor' '/home/collins/Param_test/Op/Dur_6000_OdorDur_1000.protocol' '/home/collins/Param_test/Lc/Locust_B.locust' $SLURM_ARRAY_TASK_ID $name '2.0'
+sleep 5 && echo "Moving on..."
+srun python /home/collins/Param_test/initExperiment.py '/home/collins/Param_test/Od/OdorB_High.odor' '/home/collins/Param_test/Op/Dur_6000_OdorDur_1000.protocol' '/home/collins/Param_test/Lc/Locust_B.locust' $SLURM_ARRAY_TASK_ID $name '2.0'
+sleep 5 && echo "Moving on..."
+srun python /home/collins/Param_test/initExperiment.py '/home/collins/Param_test/Od/OdorC_High.odor' '/home/collins/Param_test/Op/Dur_6000_OdorDur_1000.protocol' '/home/collins/Param_test/Lc/Locust_B.locust' $SLURM_ARRAY_TASK_ID $name '2.0'
+sleep 5 && echo "Moving on..."
+srun python /home/collins/Param_test/initExperiment.py '/home/collins/Param_test/Od/OdorA_High.odor' '/home/collins/Param_test/Op/Dur_6000_OdorDur_1000.protocol' '/home/collins/Param_test/Lc/Locust_C.locust' $SLURM_ARRAY_TASK_ID $name '2.0'
+sleep 5 && echo "Moving on..."
+srun python /home/collins/Param_test/initExperiment.py '/home/collins/Param_test/Od/OdorB_High.odor' '/home/collins/Param_test/Op/Dur_6000_OdorDur_1000.protocol' '/home/collins/Param_test/Lc/Locust_C.locust' $SLURM_ARRAY_TASK_ID $name '2.0'
+sleep 5 && echo "Moving on..."
+srun python /home/collins/Param_test/initExperiment.py '/home/collins/Param_test/Od/OdorC_High.odor' '/home/collins/Param_test/Op/Dur_6000_OdorDur_1000.protocol' '/home/collins/Param_test/Lc/Locust_C.locust' $SLURM_ARRAY_TASK_ID $name '2.0'
+sleep 5 && echo "Done"
 
