@@ -4,8 +4,8 @@
 #SBATCH --ntasks-per-node=48
 #SBATCH --time=12:00:00
 #SBATCH --job-name=tensorflow
-#SBATCH --error=../run/job.%J.err
-#SBATCH --output=../run/job.%J.out
+#SBATCH --error=out/job.%J.err
+#SBATCH --output=out/job.%J.out
 #SBATCH --partition=standard
 #SBATCH -a 0-9
 
