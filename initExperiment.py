@@ -67,4 +67,6 @@ copy(protocol_path,folder)
 copy(locust_path,folder)
 copy(os.getcwd()+"/antennalLobe.py",folder)
 
+call(['python','/home/collins/Param_test/clean.py'])
+
 print("Program Complete.")
