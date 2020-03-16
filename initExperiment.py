@@ -69,4 +69,6 @@ copy(os.getcwd()+"/antennalLobe.py",folder)
 
 call(['python','/home/collins/Param_test/clean.py'])
 
+call(['rm','-r','/home/collins/Simulation_Data/*'])
+
 print("Program Complete.")
