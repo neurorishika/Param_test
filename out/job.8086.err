@@ -1,0 +1,90 @@
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /home/collins/Param_test/antennalLobe.py:255: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+2020-03-23 07:52:39.951294: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2020-03-23 07:52:39.959340: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2900000000 Hz
+2020-03-23 07:52:39.961405: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x56323b9d03e0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-03-23 07:52:39.961443: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /home/collins/Param_test/antennalLobe.py:255: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+2020-03-23 07:56:43.900846: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2020-03-23 07:56:43.908620: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2900000000 Hz
+2020-03-23 07:56:43.910862: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55ffac45ccc0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-03-23 07:56:43.910906: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /home/collins/Param_test/antennalLobe.py:255: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+2020-03-23 08:01:02.939907: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2020-03-23 08:01:02.950184: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2900000000 Hz
+2020-03-23 08:01:02.952396: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55720b341c70 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-03-23 08:01:02.952432: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /home/collins/Param_test/antennalLobe.py:255: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+2020-03-23 08:05:28.462747: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2020-03-23 08:05:28.471940: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2900000000 Hz
+2020-03-23 08:05:28.473999: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x559d6acbe370 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-03-23 08:05:28.474036: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /home/collins/Param_test/antennalLobe.py:255: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+2020-03-23 08:09:53.854601: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2020-03-23 08:09:53.864912: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2900000000 Hz
+2020-03-23 08:09:53.867034: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5653dc060210 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-03-23 08:09:53.867072: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+WARNING:tensorflow:From /home/collins/.local/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /home/collins/Param_test/antennalLobe.py:255: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+2020-03-23 08:14:13.692855: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2020-03-23 08:14:13.703241: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2900000000 Hz
+2020-03-23 08:14:13.705350: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x56084de78190 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-03-23 08:14:13.705387: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+rm: cannot remove ‘/home/collins/Simulation_Data/Sweep_EIB_GABAALNPN_2.75/OdorB_High_Dur_6000_OdorDur_1000_Locust_C_7/batch3_part_1.npy’: No such file or directory
+rm: cannot remove ‘/home/collins/Simulation_Data/Sweep_EIB_GABAALNPN_2.75/OdorB_High_Dur_6000_OdorDur_1000_Locust_C_7/time.npy’: No such file or directory
+rm: cannot remove ‘/home/collins/Simulation_Data/Sweep_EIB_GABAALNPN_2.75/OdorB_High_Dur_6000_OdorDur_1000_Locust_C_7/batch5_part_1.npy’: No such file or directory
+rm: cannot remove ‘/home/collins/Simulation_Data/Sweep_EIB_GABAALNPN_2.75/OdorB_High_Dur_6000_OdorDur_1000_Locust_C_0/state_vector.npy’: No such file or directory
+rm: cannot remove ‘/home/collins/Simulation_Data/Sweep_EIB_GABAALNPN_2.75/OdorB_High_Dur_6000_OdorDur_1000_Locust_C_0/ORN Firing Data.npy’: No such file or directory
+rm: cannot remove ‘/home/collins/Simulation_Data/Sweep_EIB_GABAALNPN_2.75/OdorB_High_Dur_6000_OdorDur_1000_Locust_C_0/batch2_part_1.npy’: No such file or directory
+rm: cannot remove ‘/home/collins/Simulation_Data/Sweep_EIB_GABAALNPN_2.75/OdorB_High_Dur_6000_OdorDur_1000_Locust_C_0/batch3_part_1.npy’: No such file or directory
+rm: cannot remove ‘/home/collins/Simulation_Data/Sweep_EIB_GABAALNPN_2.75/OdorB_High_Dur_6000_OdorDur_1000_Locust_C_0/time.npy’: No such file or directory
+rm: cannot remove ‘/home/collins/Simulation_Data/Sweep_EIB_GABAALNPN_2.75/OdorB_High_Dur_6000_OdorDur_1000_Locust_C_0/batch5_part_1.npy’: No such file or directory
+rm: cannot remove ‘/home/collins/Simulation_Data/Sweep_EIB_GABAALNPN_2.75/OdorB_High_Dur_6000_OdorDur_1000_Locust_C_9/state_vector.npy’: No such file or directory
+rm: cannot remove ‘/home/collins/Simulation_Data/Sweep_EIB_GABAALNPN_2.75/OdorB_High_Dur_6000_OdorDur_1000_Locust_C_9/ORN Firing Data.npy’: No such file or directory
+rm: cannot remove ‘/home/collins/Simulation_Data/Sweep_EIB_GABAALNPN_2.75/OdorB_High_Dur_6000_OdorDur_1000_Locust_C_9/batch2_part_1.npy’: No such file or directory
+rm: cannot remove ‘/home/collins/Simulation_Data/Sweep_EIB_GABAALNPN_2.75/OdorB_High_Dur_6000_OdorDur_1000_Locust_C_9/time.npy’: No such file or directory
+rm: cannot remove ‘/home/collins/Simulation_Data/Sweep_EIB_GABAALNPN_2.75/OdorB_High_Dur_6000_OdorDur_1000_Locust_C_9/batch5_part_1.npy’: No such file or directory
+rm: cannot remove ‘/home/collins/Simulation_Data/Sweep_EIB_GABAALNPN_2.75/OdorB_High_Dur_6000_OdorDur_1000_Locust_C_2/batch3_part_1.npy’: No such file or directory
+rm: cannot remove ‘/home/collins/Simulation_Data/Sweep_EIB_GABAALNPN_2.75/OdorB_High_Dur_6000_OdorDur_1000_Locust_C_2/current_input.npy’: No such file or directory
+rm: cannot remove ‘/home/collins/Simulation_Data/Sweep_EIB_GABAALNPN_2.75/OdorB_High_Dur_6000_OdorDur_1000_Locust_C_3/batch1_part_1.npy’: No such file or directory
+rm: cannot remove ‘/home/collins/Simulation_Data/Sweep_EIB_GABAALNPN_2.75/OdorB_High_Dur_6000_OdorDur_1000_Locust_C_8/state_vector.npy’: No such file or directory
+rm: cannot remove ‘/home/collins/Simulation_Data/Sweep_EIB_GABAALNPN_2.75/OdorB_High_Dur_6000_OdorDur_1000_Locust_C_8/ORN Firing Data.npy’: No such file or directory
+rm: cannot remove ‘/home/collins/Simulation_Data/Sweep_EIB_GABAALNPN_2.75/OdorB_High_Dur_6000_OdorDur_1000_Locust_C_8/batch2_part_1.npy’: No such file or directory
+rm: cannot remove ‘/home/collins/Simulation_Data/Sweep_EIB_GABAALNPN_2.75/OdorB_High_Dur_6000_OdorDur_1000_Locust_C_8/time.npy’: No such file or directory
+rm: cannot remove ‘/home/collins/Simulation_Data/Sweep_EIB_GABAALNPN_2.75/OdorB_High_Dur_6000_OdorDur_1000_Locust_C_8/batch5_part_1.npy’: No such file or directory
+rm: cannot remove ‘/home/collins/Simulation_Data/Sweep_EIB_GABAALNPN_2.75/OdorB_High_Dur_6000_OdorDur_1000_Locust_C_4/batch1_part_1.npy’: No such file or directory
+rm: cannot remove ‘/home/collins/Simulation_Data/Sweep_EIB_GABAALNPN_2.75/OdorB_High_Dur_6000_OdorDur_1000_Locust_C_6/Locust_C.locust’: No such file or directory
+rm: cannot remove ‘/home/collins/Simulation_Data/Sweep_EIB_GABAALNPN_2.75/OdorB_High_Dur_6000_OdorDur_1000_Locust_C_6/batch2_part_1.npy’: No such file or directory
+rm: cannot remove ‘/home/collins/Simulation_Data/Sweep_EIB_GABAALNPN_2.75/OdorB_High_Dur_6000_OdorDur_1000_Locust_C_6/batch5_part_1.npy’: No such file or directory
+rm: cannot remove ‘/home/collins/Simulation_Data/Sweep_EIB_GABAALNPN_2.75/OdorB_High_Dur_6000_OdorDur_1000_Locust_C_6/current_input.npy’: No such file or directory
+rm: cannot remove ‘/home/collins/Simulation_Data/Sweep_EIB_GABAALNPN_2.75/OdorB_High_Dur_6000_OdorDur_1000_Locust_C_5/Dur_6000_OdorDur_1000.protocol’: Stale file handle
+rm: cannot remove ‘/home/collins/Simulation_Data/Sweep_EIB_GABAALNPN_2.75/OdorB_High_Dur_6000_OdorDur_1000_Locust_C_1’: No such file or directory
+rm: cannot remove ‘/home/collins/Simulation_Data/*’: No such file or directory

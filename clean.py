@@ -22,4 +22,4 @@ for a in os.listdir('/home/collins/Simulation_Data/'):
 			os.makedirs(folder)
 		np.save(folder+"AL_output",overall_state[::100,:])
 
-os.system('rm -r /home/collins/Simulation_Data/*')
+#os.system('rm -r /home/collins/Simulation_Data/*')

@@ -1,0 +1,32 @@
+Traceback (most recent call last):
+  File "/home/collins/.local/lib/python3.7/site-packages/numpy/lib/npyio.py", line 553, in save
+    pickle_kwargs=pickle_kwargs)
+  File "/home/collins/.local/lib/python3.7/site-packages/numpy/lib/format.py", line 687, in write_array
+    array.tofile(fp)
+OSError: [Errno 122] Disk quota exceeded
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/collins/Param_test/receptorLayer.py", line 99, in <module>
+    np.save(sys.argv[4]+'/ORN Firing Data',orns[:,::100])
+  File "<__array_function__ internals>", line 6, in save
+  File "/home/collins/.local/lib/python3.7/site-packages/numpy/lib/npyio.py", line 556, in save
+    fid.close()
+OSError: [Errno 122] Disk quota exceeded
+Traceback (most recent call last):
+  File "/home/collins/.local/lib/python3.7/site-packages/numpy/lib/npyio.py", line 553, in save
+    pickle_kwargs=pickle_kwargs)
+  File "/home/collins/.local/lib/python3.7/site-packages/numpy/lib/format.py", line 676, in write_array
+    pickle.dump(array, fp, protocol=3, **pickle_kwargs)
+OSError: [Errno 122] Disk quota exceeded
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/collins/Param_test/initExperiment.py", line 44, in <module>
+    np.save(folder+'/time',time)
+  File "<__array_function__ internals>", line 6, in save
+  File "/home/collins/.local/lib/python3.7/site-packages/numpy/lib/npyio.py", line 556, in save
+    fid.close()
+OSError: [Errno 122] Disk quota exceeded

@@ -1,0 +1,20 @@
+==========================================
+SLURM_CLUSTER_NAME = param-brahma
+SLURM_ARRAY_JOB_ID = 6365
+SLURM_ARRAY_TASK_ID = 1
+SLURM_ARRAY_TASK_COUNT = 10
+SLURM_ARRAY_TASK_MAX = 9
+SLURM_ARRAY_TASK_MIN = 0
+SLURM_JOB_ACCOUNT = collins
+SLURM_JOB_ID = 6367
+SLURM_JOB_NAME = tensorflow
+SLURM_JOB_NODELIST = cn010
+SLURM_JOB_USER = collins
+SLURM_JOB_UID = 7009
+SLURM_JOB_PARTITION = standard
+SLURM_TASK_PID = 45230
+SLURM_SUBMIT_DIR = /home/collins/Param_test
+SLURM_CPUS_ON_NODE = 48
+SLURM_NTASKS = 48
+SLURM_TASK_PID = 45230
+==========================================
