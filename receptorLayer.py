@@ -21,11 +21,13 @@ with open(locust_path, 'rb') as fp:
 
 # Define ORN Response Generator
 def generate_orn(orn_number,duration,resolution,odorVec,odorStart,odorEnd): # Function to generate single ORN Trace
-    
+    seeds = int(locust['rec_seeds'][orn_number]+12)
+    np.random.seed(seeds)
     baseline = np.clip(locust['baseline_firing']+locust['baseline_firing_variation']*np.random.normal(),1,None)/locust['peak_firing'] # Baseline Firing Rate Ratio
     trace = baseline*np.ones(int(duration/resolution)) # Set Baseline activity for the Protocol Duration
+    np.random.seed()
     rec_field = pt.generateUniform(1,odor['dim_odorspace'],seed=int(locust['rec_seeds'][orn_number])) # Receptive Field of ORNs in Odor Space
-    
+    np.random.seed()
     latency = locust['latency'][orn_number] # Latency of Response to Odor Presentation
     t_rise = locust['t_rise'][orn_number] # Time to Rise to Peak
     t_fall = locust['t_fall'][orn_number] # Response Decay Time
@@ -83,6 +85,7 @@ def generate_orn(orn_number,duration,resolution,odorVec,odorStart,odorEnd): # Fu
     return trace
 
 # Generate Odor Response
+np.random.seed()
 
 print("Generating ORN Responses...")
 
@@ -97,6 +100,8 @@ print("Generation Complete.")
 
 # Save ORN Data
 np.save(sys.argv[4]+'/ORN Firing Data',orns[:,::100])
+
+np.random.seed()
 
 init_theta = np.random.uniform(size=orns.shape[0])
 random_normal = np.random.normal(size=orns.shape)

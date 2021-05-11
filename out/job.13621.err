@@ -1,0 +1,5 @@
+
+The following have been reloaded with a version change:
+  1) python/3.6 => python/3.7
+
+/var/share/slurm/slurmd/job13621/slurm_script: line 19: 16193 Killed                  python /home/collins/Param_test/initExperiment.py '/home/collins/Param_test/Od/OdorA_High.odor' '/home/collins/Param_test/Op/Dur_6000_OdorDur_1000.protocol' '/home/collins/Param_test/Lc/Locust_C.locust' $SLURM_ARRAY_TASK_ID $name '0.75'

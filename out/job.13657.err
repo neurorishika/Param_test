@@ -1,0 +1,40 @@
+Lmod has detected the following error: The following module(s) are unknown:
+"python/3.7"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore-cache load "python/3.7"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+Traceback (most recent call last):
+  File "/home/collins/Param_test/antennalLobe.py", line 2, in <module>
+    import tensorflow.compat.v1 as tf
+ModuleNotFoundError: No module named 'tensorflow'
+Traceback (most recent call last):
+  File "/home/collins/Param_test/antennalLobe.py", line 2, in <module>
+    import tensorflow.compat.v1 as tf
+ModuleNotFoundError: No module named 'tensorflow'
+Traceback (most recent call last):
+  File "/home/collins/Param_test/antennalLobe.py", line 2, in <module>
+    import tensorflow.compat.v1 as tf
+ModuleNotFoundError: No module named 'tensorflow'
+Traceback (most recent call last):
+  File "/home/collins/Param_test/antennalLobe.py", line 2, in <module>
+    import tensorflow.compat.v1 as tf
+ModuleNotFoundError: No module named 'tensorflow'
+Traceback (most recent call last):
+  File "/home/collins/Param_test/antennalLobe.py", line 2, in <module>
+    import tensorflow.compat.v1 as tf
+ModuleNotFoundError: No module named 'tensorflow'
+Traceback (most recent call last):
+  File "/home/collins/Param_test/antennalLobe.py", line 2, in <module>
+    import tensorflow.compat.v1 as tf
+ModuleNotFoundError: No module named 'tensorflow'
+Traceback (most recent call last):
+  File "/home/collins/Param_test/initExperiment.py", line 53, in <module>
+    os.remove(folder+'/state_vector.npy')
+FileNotFoundError: [Errno 2] No such file or directory: '/home/collins/Simulation_Data/Sweep_EIB_GABAALNPN_0.75/OdorB_High_Dur_6000_OdorDur_1000_Locust_B_7/state_vector.npy'
